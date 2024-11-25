@@ -12,6 +12,7 @@ from ultralytics import YOLO
 
 from operate.config import Config
 from operate.exceptions import ModelNotRecognizedException
+# from operate.exceptopns import ModelNotRecognizedExectption
 from operate.utils.screenshot import (
     capture_screen_with_cursor,
 )
