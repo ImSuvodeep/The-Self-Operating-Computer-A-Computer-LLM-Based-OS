@@ -243,6 +243,16 @@ def get_system_prompt(model, objective):
             os_search_str=os_search_str,
             operating_system=operating_system,
         )
+
+    else:
+        prompt = SYSTEM_PROMPT_STANDARD.format(
+            objectives = objective, 
+            cmd_string = cmd_string, 
+            os_Search_str = os_search_str, 
+            operating_system = operating_system,
+        )
+
+    
     else:
         prompt = SYSTEM_PROMPT_STANDARD.format(
             objective=objective,
